@@ -1,11 +1,14 @@
 import React from "react";
 
 function Output({weather}) {
+    console.log(weather);
     return (
         <>
-        <h2>{weather.name}</h2>
-        <p>{weather.main.temp}degree C</p>
-        <p>{weather.weather[0].description}</p>
+            <div>
+                <h2>{weather.name}</h2>
+                <p>{weather.weather[0].main}</p>
+                <p>{weather.main.temp}</p>
+                </div>
         </>
     )
 }

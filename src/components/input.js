@@ -1,5 +1,4 @@
 import React,{useState} from "react";
-
 function Input({onCityChange}) {
 
     const [input, setInput] = useState("");
@@ -9,7 +8,6 @@ function Input({onCityChange}) {
         onCityChange(input);
         setInput("");
     }
-
     return (
         <div>
             <form onSubmit={handleSubmit}>
@@ -22,8 +20,5 @@ function Input({onCityChange}) {
                 <button type="submit">Get Weather</button>
                 </form>
         </div>
-    )
-}
-
-
+    )}
 export default Input
